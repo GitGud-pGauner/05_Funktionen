@@ -78,8 +78,8 @@ output(getString("Maxine","Mützerich"));
 function getString(firstName , familyName) {
     const GAP = " ";
     let outputStr = "Hallo" + GAP + firstName + GAP + familyName + "!";
-    return outputStr; /// return sendet Daten an den call zurück
-    console.log(outputStr);  // "return" bricht die Funktion ab (ähnlich wie "break;")
+    return outputStr; // return sendet Daten an den call zurück
+    console.log(outputStr); //return bricht die Funktion ab (ähnlich wie "break;")
 }
 
 
