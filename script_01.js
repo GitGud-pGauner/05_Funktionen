@@ -23,11 +23,9 @@
 //     console.log("Halär");
 //     console.log("Ahoi");
 // }
-
 // ausgabeNamen();
 // function ausgabeNamen() 
-// {
-//     // what happens in VEGAS ...
+// { // what happens in VEGAS ...
 //    let firstName = "Karsten"; 
 //    console.log("Hallo " + firstName + "!")
 // } 
@@ -43,17 +41,37 @@ function ausgabeNamenParam(firstName) {
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter
 
-ausgabeNamenParams("Ozan" , "Özyurt"); 
-ausgabeNamenParams("Levi" , "Horak");
-ausgabeNamenParams("Mona" , "Horak");
-function ausgabeNamenParams(firstName , familyName) {
-    console.log("Hallo "+ firstName + " " + familyName + "!");
+// ausgabeNamenParams("Ozan" , "Özyurt"); 
+// ausgabeNamenParams("Gudrun" , "Grundig");
+// ausgabeNamenParams("Max" , "Mueller");
+// function ausgabeNamenParams(firstName , familyName) {
+//     console.log("Hallo "+ firstName + " " + familyName + "!");
+// }
+ 
+// ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"));
+// function ausgabeNamenParams(firstName , familyName) {
+//     console.log("Hallo "+ firstName + " " + familyName + "!");
+// }
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
+
+ausgabeNamenParams2("Ozan","Özyurt")
+
+function ausgabeNamenParams2(firstName , familyName) {
+   
+// 1. Funktionalität: string composing
+const GAP = " ";
+let outputStr = "Hallo" + GAP + firstName + GAP + familyName + "!";
+
+
+
+// 2. Funktionalität: string output
+
+    console.log(outputStr);
 }
-
-
-
-
-
 
 
 
